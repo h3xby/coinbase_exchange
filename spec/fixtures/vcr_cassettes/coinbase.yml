@@ -1,0 +1,204 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinbase.com/v2/exchange-rates?currency=USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 22 Dec 2017 15:37:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfd25078365fed4608673fcd990e4a6981513957070; expires=Sat, 22-Dec-18
+        15:37:50 GMT; path=/; domain=.coinbase.com; HttpOnly
+      Cache-Control:
+      - public, max-age=30
+      Content-Disposition:
+      - attachment; filename=response.json
+      Content-Security-Policy:
+      - 'default-src ''self'' https://www.coinbase.com; child-src ''self'' https://www.coinbase.com
+        https://*.online-metrix.net https://*.wpstn.com https://netverify.com https://platform.twitter.com
+        https://www.google.com/recaptcha/ https://cdn.plaid.com/link/ blob:; connect-src
+        ''self'' https://www.coinbase.com https://api.coinbase.com https://api.mixpanel.com
+        https://*.online-metrix.net https://api.cloudinary.com https://ott9.wpstn.com/live
+        static.coinbase.com wss://ws.coinbase.com wss://ws.coinbase.com:443; font-src
+        ''self'' https://www.coinbase.com https://assets.coinbase.com/ static.coinbase.com;
+        img-src ''self'' data: https://www.coinbase.com https://images.coinbase.com
+        https://exceptions.coinbase.com https://coinbase-uploads.s3.amazonaws.com
+        https://s3.amazonaws.com/app-public/ https://maps.gstatic.com https://ssl.google-analytics.com
+        https://www.google.com https://maps.googleapis.com https://csi.gstatic.com
+        https://www.google-analytics.com https://res.cloudinary.com https://secure.gravatar.com
+        https://i2.wp.com https://*.online-metrix.net https://assets.coinbase.com/
+        https://hexagon-analytics.com https://api.mixpanel.com blob: static.coinbase.com
+        https://www.facebook.com/tr; media-src ''self'' https://www.coinbase.com blob:;
+        object-src ''self'' data: https://www.coinbase.com https://cdn.siftscience.com
+        https://*.online-metrix.net https://www.gstatic.com https://www.google.com/recaptcha/api/;
+        script-src ''self'' ''unsafe-inline'' ''unsafe-eval'' https://www.coinbase.com
+        https://cdn.siftscience.com https://*.newrelic.com https://bam.nr-data.net
+        https://*.google-analytics.com https://www.google.com https://www.gstatic.com
+        https://*.online-metrix.net https://code.jquery.com https://chart.googleapis.com
+        https://maps.googleapis.com https://maps.gstatic.com https://netverify.com
+        https://ajax.cloudflare.com https://cdn.plaid.com/link/v2/stable/ https://assets.coinbase.com/
+        static.coinbase.com; style-src ''self'' ''unsafe-inline'' https://www.coinbase.com
+        https://assets.coinbase.com/ static.coinbase.com; report-uri /csp-report'
+      Etag:
+      - W/"bdfcb1a5d94975dc179fda4211fd3cbb"
+      Expect-Ct:
+      - enforce; max-age=86400; report-uri="https://coinbase.report-uri.io/r/default/ct/reportOnly"
+      Public-Key-Pins:
+      - max-age=5184000; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
+        pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
+        report-uri="https://coinbase.report-uri.io/r/default/hpkp/enforce"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Origin,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Powered-By:
+      - Proof-of-Work
+      X-Request-Id:
+      - 060a9f60-3f81-4892-a6e1-31feede6f16e
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - HIT
+      Expires:
+      - Fri, 22 Dec 2017 15:38:20 GMT
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3d142a2879402b09-WAW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"currency":"USD","rates":{"AED":"3.67","AFN":"69.54","ALL":"112.26","AMD":"481.54","ANG":"1.78","AOA":"165.92","ARS":"18.05","AUD":"1.30","AWG":"1.79","AZN":"1.70","BAM":"1.65","BBD":"2.00","BCH":"0.00044445","BDT":"82.77","BGN":"1.65","BHD":"0.377","BIF":"1756","BMD":"1.00","BND":"1.34","BOB":"6.91","BRL":"3.33","BSD":"1.00","BTC":"0.00007600","BTN":"64.05","BWP":"10.02","BYN":"1.99","BYR":"19863","BZD":"2.01","CAD":"1.28","CDF":"1562.88","CHF":"0.99","CLF":"0.0230","CLP":"623","CNY":"6.58","COP":"2965.50","CRC":"565.49","CUC":"1.00","CVE":"93.40","CZK":"21.75","DJF":"179","DKK":"6.29","DOP":"48.39","DZD":"115.22","EEK":"14.61","EGP":"17.86","ERN":"15.10","ETB":"27.39","ETH":"0.00158731","EUR":"0.84","FJD":"2.05","FKP":"0.75","GBP":"0.75","GEL":"2.53","GGP":"0.75","GHS":"4.53","GIP":"0.75","GMD":"47.57","GNF":"9025","GTQ":"7.35","GYD":"206.03","HKD":"7.82","HNL":"23.64","HRK":"6.37","HTG":"64.18","HUF":"263","IDR":"13557.21","ILS":"3.48","IMP":"0.75","INR":"64.02","IQD":"1191.900","ISK":"106","JEP":"0.75","JMD":"124.78","JOD":"0.709","JPY":"113","KES":"103.00","KGS":"69.48","KHR":"4036.45","KMF":"415","KRW":"1077","KWD":"0.302","KYD":"0.83","KZT":"334.84","LAK":"8321.40","LBP":"1515.67","LKR":"152.84","LRD":"125.49","LSL":"12.76","LTC":"0.00422021","LTL":"3.22","LVL":"0.66","LYD":"1.364","MAD":"9.43","MDL":"17.19","MGA":"3232.0","MKD":"52.02","MMK":"1362.35","MNT":"2425.61","MOP":"8.05","MRO":"355.1","MTL":"0.68","MUR":"33.90","MVR":"15.41","MWK":"725.44","MXN":"19.55","MYR":"4.08","MZN":"59.00","NAD":"12.62","NGN":"359.46","NIO":"30.81","NOK":"8.34","NPR":"102.44","NZD":"1.43","OMR":"0.385","PAB":"1.00","PEN":"3.24","PGK":"3.22","PHP":"50.14","PKR":"110.66","PLN":"3.54","PYG":"5620","QAR":"3.64","RON":"3.92","RSD":"100.42","RUB":"58.34","RWF":"858","SAR":"3.75","SBD":"7.75","SCR":"13.42","SEK":"8.36","SGD":"1.34","SHP":"0.75","SLL":"7648.39","SOS":"578.46","SRD":"7.46","SSP":"130.26","STD":"20674.89","SVC":"8.75","SZL":"12.76","THB":"32.74","TJS":"8.81","TMT":"3.51","TND":"2.474","TOP":"2.27","TRY":"3.82","TTD":"6.73","TWD":"29.90","TZS":"2245.10","UAH":"27.96","UGX":"3621","USD":"1.00","UYU":"28.87","UZS":"8068.95","VEF":"10.50","VND":"22706","VUV":"106","WST":"2.55","XAF":"554","XAG":"0","XAU":"0","XCD":"2.70","XDR":"1","XOF":"554","XPD":"0","XPF":"101","XPT":"0","YER":"250.30","ZAR":"12.61","ZMK":"5253.08","ZMW":"9.77","ZWL":"322.36"}}}'
+    http_version: 
+  recorded_at: Fri, 22 Dec 2017 15:37:49 GMT
+- request:
+    method: get
+    uri: https://api.coinbase.com/v2/exchange-rates?currency=BTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 22 Dec 2017 15:37:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df31a94f4f5b5775a5f384d5988c304d11513957070; expires=Sat, 22-Dec-18
+        15:37:50 GMT; path=/; domain=.coinbase.com; HttpOnly
+      Cache-Control:
+      - public, max-age=30
+      Content-Disposition:
+      - attachment; filename=response.json
+      Content-Security-Policy:
+      - 'default-src ''self'' https://www.coinbase.com; child-src ''self'' https://www.coinbase.com
+        https://*.online-metrix.net https://*.wpstn.com https://netverify.com https://platform.twitter.com
+        https://www.google.com/recaptcha/ https://cdn.plaid.com/link/ blob: https://coinbase.ada.support;
+        connect-src ''self'' https://www.coinbase.com https://api.coinbase.com https://api.mixpanel.com
+        https://*.online-metrix.net https://api.cloudinary.com https://ott9.wpstn.com/live
+        static.coinbase.com wss://ws.coinbase.com wss://ws.coinbase.com:443 https://coinbase.ada.support/api/;
+        font-src ''self'' https://www.coinbase.com https://assets.coinbase.com/ static.coinbase.com;
+        img-src ''self'' data: https://www.coinbase.com https://images.coinbase.com
+        https://exceptions.coinbase.com https://coinbase-uploads.s3.amazonaws.com
+        https://s3.amazonaws.com/app-public/ https://maps.gstatic.com https://ssl.google-analytics.com
+        https://www.google.com https://maps.googleapis.com https://csi.gstatic.com
+        https://www.google-analytics.com https://res.cloudinary.com https://secure.gravatar.com
+        https://i2.wp.com https://*.online-metrix.net https://assets.coinbase.com/
+        https://hexagon-analytics.com https://api.mixpanel.com blob: static.coinbase.com
+        https://d124s1zbdqkqqe.cloudfront.net https://www.facebook.com/tr; media-src
+        ''self'' https://www.coinbase.com blob:; object-src ''self'' data: https://www.coinbase.com
+        https://cdn.siftscience.com https://*.online-metrix.net https://www.gstatic.com
+        https://www.google.com/recaptcha/api/; script-src ''self'' ''unsafe-inline''
+        ''unsafe-eval'' https://www.coinbase.com https://cdn.siftscience.com https://*.newrelic.com
+        https://bam.nr-data.net https://*.google-analytics.com https://www.google.com
+        https://www.gstatic.com https://*.online-metrix.net https://code.jquery.com
+        https://chart.googleapis.com https://maps.googleapis.com https://maps.gstatic.com
+        https://netverify.com https://ajax.cloudflare.com https://cdn.plaid.com/link/v2/stable/
+        https://assets.coinbase.com/ static.coinbase.com; style-src ''self'' ''unsafe-inline''
+        https://www.coinbase.com https://assets.coinbase.com/ static.coinbase.com;
+        report-uri /csp-report'
+      Etag:
+      - W/"34518579622173b9328be02b0ada49e8"
+      Expect-Ct:
+      - enforce; max-age=86400; report-uri="https://coinbase.report-uri.io/r/default/ct/reportOnly"
+      Public-Key-Pins:
+      - max-age=5184000; pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=";
+        pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg=";
+        report-uri="https://coinbase.report-uri.io/r/default/hpkp/enforce"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Origin,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Powered-By:
+      - Proof-of-Work
+      X-Request-Id:
+      - 391a5491-c481-4a21-a45b-be189c0d2ff4
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - HIT
+      Expires:
+      - Fri, 22 Dec 2017 15:38:20 GMT
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3d142a2b691e2ad9-WAW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"currency":"BTC","rates":{"AED":"48328.83","AFN":"915041.72","ALL":"1477161.98","AMD":"6336295.94","ANG":"23485.11","AOA":"2183287.78","ARS":"237506.49","AUD":"17053.34","AWG":"23553.48","AZN":"22369.28","BAM":"21719.26","BBD":"26316.80","BCH":"5.79772576","BDT":"1089123.40","BGN":"21744.33","BHD":"4961.059","BIF":"23110098","BMD":"13158.40","BND":"17687.72","BOB":"90912.06","BRL":"43767.35","BSD":"13158.40","BTC":"1.00000000","BTN":"842822.18","BWP":"131832.61","BYN":"26135.96","BYR":"261359641","BZD":"26444.46","CAD":"16801.90","CDF":"20565020.76","CHF":"13037.92","CLF":"302.5116","CLP":"8196367","CNY":"86565.82","COP":"39021235.20","CRC":"7440946.47","CUC":"13158.40","CVE":"1228994.56","CZK":"286247.18","DJF":"2352327","DKK":"82734.35","DOP":"636720.62","DZD":"1516130.59","EEK":"192292.79","EGP":"235072.18","ERN":"198669.05","ETB":"360443.89","ETH":"20.72324111","EUR":"11381.91","FJD":"26976.01","FKP":"9837.69","GBP":"9960.64","GEL":"33265.79","GGP":"9837.69","GHS":"59623.34","GIP":"9837.69","GMD":"625945.09","GNF":"118759165","GTQ":"96735.19","GYD":"2710994.66","HKD":"102858.03","HNL":"311050.15","HRK":"83838.75","HTG":"844449.29","HUF":"3462107","IDR":"178391220.34","ILS":"45829.39","IMP":"9837.69","INR":"842387.61","IQD":"15683496.960","ISK":"1396698","JEP":"9837.69","JMD":"1641863.01","JOD":"9329.319","JPY":"1491801","KES":"1355315.20","KGS":"914287.30","KHR":"53113223.68","KMF":"5463053","KRW":"14170281","KWD":"3974.718","KYD":"10964.33","KZT":"4405958.66","LAK":"109496309.76","LBP":"19943854.14","LKR":"2011184.32","LRD":"1651245.79","LSL":"167875.41","LTC":"56.36812557","LTL":"42433.80","LVL":"8635.34","LYD":"17952.110","MAD":"124068.62","MDL":"226162.08","MGA":"42529264.3","MKD":"684434.18","MMK":"17926346.24","MNT":"31917198.24","MOP":"105926.16","MRO":"4675084.4","MTL":"8996.90","MUR":"446076.34","MVR":"202767.59","MWK":"9545629.70","MXN":"257262.37","MYR":"53672.46","MZN":"776297.19","NAD":"166042.56","NGN":"4729852.67","NIO":"405404.97","NOK":"109679.47","NPR":"1347953.93","NZD":"18765.55","OMR":"5063.615","PAB":"13158.40","PEN":"42622.57","PGK":"42331.94","PHP":"659696.38","PKR":"1456147.03","PLN":"46586.00","PYG":"73954813","QAR":"47920.70","RON":"51557.20","RSD":"1321414.99","RUB":"767600.53","RWF":"11296289","SAR":"49347.29","SBD":"101922.61","SCR":"176529.73","SEK":"110013.72","SGD":"17690.17","SHP":"9837.69","SLL":"100640636.62","SOS":"7611565.05","SRD":"98135.35","SSP":"1714057.92","STD":"272048475.85","SVC":"115127.32","SZL":"167879.08","THB":"430822.46","TJS":"115975.64","TMT":"46185.64","TND":"32549.276","TOP":"29926.44","TRY":"50273.68","TTD":"88544.82","TWD":"393433.84","TZS":"29541923.84","UAH":"367922.02","UGX":"47652817","USD":"13158.40","UYU":"379865.70","UZS":"106174471.68","VEF":"138169.12","VND":"298780525","VUV":"1395041","WST":"33613.72","XAF":"7290914","XAG":"809","XAU":"10","XCD":"35561.23","XDR":"9294","XOF":"7290914","XPD":"13","XPF":"1326364","XPT":"14","YER":"3293605.79","ZAR":"165952.17","ZMK":"69122065.44","ZMW":"128529.42","ZWL":"4241676.18"}}}'
+    http_version: 
+  recorded_at: Fri, 22 Dec 2017 15:37:49 GMT
+recorded_with: VCR 4.0.0
