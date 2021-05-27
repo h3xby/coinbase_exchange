@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "money", "~> 6.7"
+  spec.add_dependency "money", "~> 6.13", ">= 6.13.6"
 
   spec.add_development_dependency "bundler", ">= 2.2.10"
   spec.add_development_dependency "rake", "~> 10.0"

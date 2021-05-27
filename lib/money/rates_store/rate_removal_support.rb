@@ -12,7 +12,7 @@ module Money::RatesStore
     #   store.remove_rate("USD", "CAD")
     #   store.remove_rate("CAD", "USD")
     def remove_rate(currency_iso_from, currency_iso_to)
-      transaction { index.delete rate_key_for(currency_iso_from, currency_iso_to) }
+      transaction { rates.delete rate_key_for(currency_iso_from, currency_iso_to) }
     end
 
     # Clears all conversion rates. Uses +Mutex+ to synchronize data access.
@@ -21,7 +21,7 @@ module Money::RatesStore
     #   store = Money::RatesStore::Memory.new
     #   store.clear_rates
     def clear_rates
-      transaction { @index = {} }
+      transaction { @rates = {} }
     end
   end
 end

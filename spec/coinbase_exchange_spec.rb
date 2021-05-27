@@ -29,8 +29,8 @@ RSpec.describe "CoinbaseExchange", vcr: vcr_options do
       bank.get_rate('USD', 'BTC')
       bank.get_rate('BTC', 'EUR')
       bank.flush_rate('USD', 'BTC')
-      expect(bank.store.instance_variable_get("@index")).to include('BTC_TO_EUR')
-      expect(bank.store.instance_variable_get("@index")).to_not include('USD_TO_BTC')
+      expect(bank.store.instance_variable_get("@rates")).to include('BTC_TO_EUR')
+      expect(bank.store.instance_variable_get("@rates")).to_not include('USD_TO_BTC')
     end
   end
 
@@ -89,7 +89,7 @@ RSpec.describe "CoinbaseExchange", vcr: vcr_options do
 
     it "should store the rate for faster retreival" do
       bank.get_rate('USD', 'BTC')
-      expect(bank.store.instance_variable_get("@index")).to include('USD_TO_BTC')
+      expect(bank.store.instance_variable_get("@rates")).to include('USD_TO_BTC')
     end
 
     it "should raise UnknownRate error when rate is not known" do
